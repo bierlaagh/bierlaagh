@@ -1,0 +1,55 @@
+# Example .gitignore file for your config dir.
+# An * ensures that everything will be ignored.
+# You can whitelist files/folders with !, these will not be ignored.
+
+!*.yaml
+!.gitignore
+!*.md
+
+# Generic ignores
+*.log
+*.log.*
+*.db
+*.db-shm
+*.db-wal
+*.pyc
+._*
+__pycache__
+
+# Directory (contents) ignores
+config/.cloud
+config/.storage
+config/deps
+config/@eaDir
+
+# Specific file ignores
+config/.config_entries.json
+config/.homekit.state
+config/.ios.conf
+config/.spotify-token-cache
+config/.tradfri_psk.conf
+config/.uuid
+config/core
+config/html5_push_registrations.conf
+config/image
+config/ip_bans.yaml
+config/known_devices.yaml
+config/neighbours
+config/secrets.yaml
+
+# ESPHome ignores
+config/esphome/secrets.yaml
+config/esphome/.*/
+
+# Ignore add-on files
+config/aircast.xml
+config/airsonos.xml
+config/notebooks
+
+# Ignore files created by IDE's
+.vscode
+.theia
+.Trash*
+
+# Specific keeps
+!.gitkeep
